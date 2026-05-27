@@ -1,0 +1,50 @@
+# Visual Studio local state and caches
+.vs/
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build outputs
+[Dd]ebug/
+[Rr]elease/
+[Xx]64/
+[Ww]in32/
+CourseWork/[Xx]64/
+
+# Compiler and linker artifacts
+*.obj
+*.pdb
+*.ilk
+*.idb
+*.ipch
+*.iobj
+*.ipdb
+*.tlog
+*.lastbuildstate
+*.recipe
+*.log
+*.exe
+*.lib
+*.exp
+
+# Visual Studio databases and indexes
+*.VC.db
+*.VC.opendb
+*.db
+*.db-shm
+*.db-wal
+Browse.VC.*
+Solution.VC.*
+FileContentIndex/
+CopilotIndices/
+
+# Keep coursework sources and project files visible to Git
+!CourseWork.slnx
+!README.md
+!.gitattributes
+!CourseWork/
+!CourseWork/*.cpp
+!CourseWork/*.h
+!CourseWork/*.vcxproj
+!CourseWork/*.vcxproj.filters
+!CourseWork/*.vcxproj.user

@@ -86,7 +86,13 @@ help                     show commands
 quit                     exit
 ```
 
-## Файлы
+## Структура исходного кода
 
-- `CourseWork/main.cpp` - реализация UDP DHT, протокола фрагментов и консольного интерфейса.
+- `CourseWork/main.cpp` - точка входа, разбор аргументов и консольный интерфейс.
+- `CourseWork/util.h`, `CourseWork/util.cpp` - hex-кодирование, CRC32, FNV-1a, строковые утилиты.
+- `CourseWork/endpoint.h`, `CourseWork/endpoint.cpp` - описание сетевого адреса peer-узла.
+- `CourseWork/udp_socket.h`, `CourseWork/udp_socket.cpp` - Winsock runtime и UDP-транспорт.
+- `CourseWork/mini_dht_node.h`, `CourseWork/mini_dht_node.cpp` - учебный DHT-узел и команды `PING`, `PONG`, `STORE`, `FIND`, `VALUE`.
+- `CourseWork/message_protocol.h`, `CourseWork/message_protocol.cpp` - формат фрагмента сообщения, сериализация и проверка CRC.
+- `CourseWork/dht_messenger.h`, `CourseWork/dht_messenger.cpp` - отправка, получение и сборка сообщений поверх DHT.
 - `CourseWork/CourseWork.vcxproj` - проект Visual Studio, C++20, линковка с `ws2_32.lib`.

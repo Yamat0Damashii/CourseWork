@@ -131,7 +131,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="dht_messenger.cpp" />
+    <ClCompile Include="endpoint.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="message_protocol.cpp" />
+    <ClCompile Include="mini_dht_node.cpp" />
+    <ClCompile Include="udp_socket.cpp" />
+    <ClCompile Include="util.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="dht_messenger.h" />
+    <ClInclude Include="endpoint.h" />
+    <ClInclude Include="message_protocol.h" />
+    <ClInclude Include="mini_dht_node.h" />
+    <ClInclude Include="udp_socket.h" />
+    <ClInclude Include="util.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
